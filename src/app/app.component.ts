@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'counter';
+  counter = 0
+  incr(){
+    this.counter--
+  }
+  returning(){
+    this.counter = 0
+  }
+  decr(){
+    this.counter++
+  }
 }
