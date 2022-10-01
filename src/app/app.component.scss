@@ -9,26 +9,28 @@
     align-items: center;
     flex-direction: column;
 }
-.counter{
+.portable{
     display: flex;
 }
 .count{
-    font-size: 100px;
-}
-.act,.count{
-    color:white;
+    font-size:100px;
+    color: white;
+    justify-content: center;
 }
 .act{
-    background-color: blue;
+    color:white;
 }
-.act,.return{
+.warning{
+    color: red;
+}
+.act,.fix,.edit{
     margin: 5px;
-    width: 100px;
+    min-width: 100px;
     font-size: 60px;
     border:2px solid rgb(128, 117, 0);
-
+    background-color: blue;
 }
-.return{
+.fix{
     color: blue;
     background: rgb(33, 30, 30);
 }

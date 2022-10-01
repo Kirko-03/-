@@ -1,15 +1,31 @@
 <div class="main">
-  <div class="count">{{counter}}</div>
-  <div class="counter">
-
-  <button (click)="decr()" class="act">
+  <div><div class="count">{{counter}}</div>
+<div *ngIf="counter>max" class="warning">Max value</div>
+<div *ngIf="counter<min" class="warning">Min value</div>
+</div>
+  <div class="portable">
+  <button (click)="decr()"   class="act">
     +
   </button>
-  <button (click)="returning()" class="return">
+
+  <button (click)="returning()" class="fix">
     ↺
   </button>
-  <button (click)="incr()" class="act">
+  <button (click)="incr()"  class="act">
     -
+  </button>
+  
+</div>
+<br>
+  <div class="portable">
+  <button (click)="maximum()" class="act">
+    max
+  </button>
+  <button (click)="saving()" class="fix">
+    save
+  </button>
+  <button (click)="minimum()" class="act">
+    min
   </button>
 </div>
 </div>
